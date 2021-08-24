@@ -1,0 +1,5 @@
+Amazon | sample_populated@gmail.com | password
+Facebook | sample_populated@gmail.com | asdfjkl;
+Discord | sample_populated@gmail.com | EFcDTAdeLVxFNSa
+Bitwise | sample_populated@gmail.com | uaDUHNCaBNYvcQELB
+Replit | sample_populated@gmail.com | mzUZWsZoSaPg

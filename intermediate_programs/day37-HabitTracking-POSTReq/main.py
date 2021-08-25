@@ -3,13 +3,17 @@
 #
 # Description: Habit tracking program. Practice with API POST requests and headers
 # References: https://pixe.la , https://docs.pixe.la , https://docs.python-requests.org/en/latest/api/
+# More references: https://www.w3schools.com/python/python_datetime.asp
+
 
 # actual website: https://pixe.la/v1/users/elvin/graphs/graph1.html
 
 import requests     # need this to work with APIs
+from datetime import datetime
 
 TOKEN = "hjkh34h3jk4hj34h3jh4"
 USERNAME = "elvin"
+GRAPH_ID = "graph1"
 
 pixela_endpoint = "https://pixe.la/v1/users"
 user_params = {
@@ -25,7 +29,7 @@ user_params = {
 
 graph_endpoint = f"{pixela_endpoint}/{USERNAME}/graphs"
 graph_config = {
-    "id": "graph1",
+    "id": GRAPH_ID,
     "name": "Cycling Graph",
     "unit": "Km",
     "type": "float",
@@ -36,5 +40,21 @@ headers = {
     "X-USER-TOKEN": TOKEN,
 }
 
-response = requests.post(url=graph_endpoint, json=graph_config, headers=headers)
-print(response.text)    # {"message":"Success.","isSuccess":true}
+# response = requests.post(url=graph_endpoint, json=graph_config, headers=headers)
+# print(response.text)    # {"message":"Success.","isSuccess":true}
+
+
+pixel_creation_endpoint = f"{pixela_endpoint}/{USERNAME}/graphs/{GRAPH_ID}"
+
+# today = datetime.now()
+today = datetime(year=2021, month=8, day=24)
+# print(today.strftime("%Y%m%d"))
+
+pixel_config = {
+    "date": today.strftime("%Y%m%d"),
+    "quantity": "20",
+}
+
+response = requests.post(url=pixel_creation_endpoint, json=pixel_config, headers=headers)
+print(response.text)
+

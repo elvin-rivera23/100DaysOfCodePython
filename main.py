@@ -1,6 +1,6 @@
 # Elvin Rivera
 # 8/24/21
-#
+#.
 # References: https://www.alphavantage.co , https://newsapi.org , https://www.twilio.com
 
 import requests

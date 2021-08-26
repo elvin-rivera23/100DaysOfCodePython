@@ -10,6 +10,7 @@
 
 import os
 import requests
+from datetime import  datetime
 
 API_KEY = os.environ["Nutritionix API Key"]
 APP_ID = os.environ["Nutritionix App ID"]
@@ -20,9 +21,12 @@ WEIGHT_KG = 72.5
 HEIGHT_CM = 170.18
 AGE = 27
 
+# API Endpoints
 exercise_endpoint = "https://trackapi.nutritionix.com/v2/natural/exercise"
+sheety_endpoint = "https://api.sheety.co/username/projectName/sheetName"  # depends on your info
 
 # step 2: get exercise stats with natural language queries
+# reference: https://gist.github.com/mattsilv/d99cd145cc2d44d71fa5d15dd4829e03
 exercise_prompt = input("Tell me which exercises you did: ")
 
 headers = {
@@ -42,3 +46,22 @@ params = {
 response = requests.post(url=exercise_endpoint, json=params, headers=headers)
 result = response.json()    # json format
 print(result)
+
+# format date and time: https://www.w3schools.com/python/python_datetime.asp
+today_date = datetime.now().strftime("%d/%m/%Y")
+now_time = datetime.now().strftime("%X")
+
+# https://www.w3schools.com/python/ref_string_title.asp -> String to Title
+# each exercise in the result will be put into the sheet columns
+# nested dictionary
+for exercise in result["exercises"]:
+    sheet_inputs = {
+        "workout": {
+            "date": today_date,
+            "time": now_time,
+            "exercise": exercise["name"].title(),
+            "duration": exercise["duration_min"],
+            "calories": exercise["nf_calories"]
+        }
+    }
+

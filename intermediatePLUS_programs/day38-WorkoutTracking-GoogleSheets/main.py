@@ -65,3 +65,32 @@ for exercise in result["exercises"]:
         }
     }
 
+# ---- STEP 4: AUTHENTICATION TYPES ----
+
+# #  -- no authentication --
+# sheet_response = requests.post(url=sheety_endpoint, json=sheet_inputs)
+
+# # -- basic Authentication--
+# # reference: https://docs.python-requests.org/en/master/user/authentication/#basic-authentication
+# sheet_response = requests.post(
+#     url=sheety_endpoint,
+#     json=sheet_inputs,
+#     auth=(
+#         os.environ["USERNAME"],
+#         os.environ["PASSWORD"],
+#     )
+# )
+
+# --- bearer Token ---
+# reference: https://stackoverflow.com/questions/29931671/making-an-api-call-in-python-with-an-api-that-requires-a-bearer-token
+bearer_headers = {
+    "Authorization": f"Bearer {os.environ['TOKEN']}"
+}
+
+sheet_response = requests.post(
+    url=sheety_endpoint,
+    json=sheet_inputs,
+    headers=bearer_headers
+)
+
+print(sheet_response.text)

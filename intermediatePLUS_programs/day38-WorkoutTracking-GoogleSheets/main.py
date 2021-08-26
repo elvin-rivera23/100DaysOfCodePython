@@ -12,6 +12,7 @@ import os
 import requests
 from datetime import  datetime
 
+# hide env variables: https://docs.replit.com/archive/secret-keys#:~:text=env%20files%20are%20used%20for,see%20the%20contents%20of%20the%20.
 API_KEY = os.environ["Nutritionix API Key"]
 APP_ID = os.environ["Nutritionix App ID"]
 

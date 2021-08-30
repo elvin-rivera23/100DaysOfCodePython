@@ -1,4 +1,5 @@
 import requests
+from pprint import pprint
 
 SHEETY_PRICES_ENDPOINT = "SHEETY PRICES ENDPOINT URL"
 
@@ -13,8 +14,12 @@ class DataManager:
         response = requests.get(url=SHEETY_PRICES_ENDPOINT)
         data = response.json()
         self.destination_data = data["prices"]  # destination data from json, prices is key
+        # 3. Try importing pretty print and printing the data out again using pprint().
+        # pprint(data)
         return self.destination_data
 
+    # 6. In the DataManager Class make a PUT request and use the row id  from sheet_data
+    # to update the Google Sheet with the IATA codes. (Do this using code).
     def update_destination_codes(self):
         for city in self.destination_data:
             # update destination by creating new dict, price is key, value is dictionary of iataCodes

@@ -31,7 +31,8 @@ if sheet_data[0]["iataCode"] == "":
     # sheet data is in dictionary/json format
     for row in sheet_data:
         row["iataCode"] = flight_search.get_destination_code(row["city"])
-    print(f"sheet_data:\n {sheet_data}")
+    # print(f"sheet_data:\n {sheet_data}")
+    print(sheet_data)
 
     # format sheet
     data_manager.destination_data = sheet_data

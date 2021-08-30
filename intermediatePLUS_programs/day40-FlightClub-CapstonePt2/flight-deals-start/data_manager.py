@@ -2,7 +2,7 @@ import requests
 from pprint import pprint
 
 SHEETY_PRICES_ENDPOINT = "SHEETY PRICES ENDPOINT URL"
-
+SHEET_USERS_ENDPOINT = "SHEETY USERS ENDPOINT"
 
 class DataManager:
     # This class is responsible for talking to the Google Sheet.
@@ -33,3 +33,10 @@ class DataManager:
                 json=new_data
             )
             print(response.text)
+
+    def get_customer_emails(self):
+        customers_endpoint = SHEET_USERS_ENDPOINT
+        response = requests.get(url=customers_endpoint)
+        data = response.json()
+        self.customer_data = data["users"]
+        return self.customer_data

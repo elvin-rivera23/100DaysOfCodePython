@@ -5,10 +5,17 @@ First few modules of Dr. Angela Yu's Web Development Bootcamp
 
 Introduction to HTML
 -
-- Links: 
-  - https://codepen.io 
+- Links:
+  - https://codepen.io
   - https://www.gutenberg.org/ebooks/1661 ,
-  - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements , 
+  - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements ,
   - https://www.w3schools.com/html/html_headings.asp
   - https://devdocs.io
   - https://www.browserstack.com/guide/how-to-inspect-element-on-mac
+
+Intermediate HTML
+-
+- More Links:
+  - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table
+  - http://www.pascalvangemert.nl/#/experiences
+  - http://www.pascalvangemert.nl/#/abilities

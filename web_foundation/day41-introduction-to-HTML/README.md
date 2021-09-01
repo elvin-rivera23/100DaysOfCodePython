@@ -21,3 +21,8 @@ Intermediate HTML
   - http://www.pascalvangemert.nl/#/abilities
   - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form
   - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input
+
+Upload Website
+-
+- Links:
+  - https://pages.github.com

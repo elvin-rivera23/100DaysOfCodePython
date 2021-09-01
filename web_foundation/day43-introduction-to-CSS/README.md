@@ -1,0 +1,23 @@
+Day 43: Web Foundation - Introduction to CSS
+-
+- Links:
+  - Introduction to CSS:
+    - http://toastytech.com/evil/index.html
+  - Inline CSS:
+    - https://www.seanhalpin.design
+    - https://developer.mozilla.org/en-US/docs/Web/CSS/background-color
+    - https://colorhunt.co/palette/94114
+    - https://developer.mozilla.org/en-US/docs/Web/CSS/color_value
+  - Internal CSS:
+    - https://www.w3schools.com/cssref/css_default_values.asp
+    - https://developer.mozilla.org/en-US/docs/Web/CSS/border-style
+    - https://devdocs.io/css/height
+  - External CSS:
+    - https://www.w3schools.com/css/css_text.asp
+  - Anatomy of CSS Syntax:
+    - https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+  - CSS Selectors:
+    - https://emojipedia.org/broccoli/
+  - Classes vs. Ids:
+    - https://developer.mozilla.org/en-US/docs/Web/CSS/:hover
+    - https://developer.mozilla.org/en-US/docs/Web/CSS/Reference

@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
 
+<!-- background color is defined inline instead of externally from css file.
+Developer Tools: elements > styles, color is overridden -->
   <body style="background-color: white">
     <table cellspacing="20">
       <tr>

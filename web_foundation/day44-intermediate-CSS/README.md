@@ -1,0 +1,25 @@
+Day 44: Web Foundation - Intermediate CSS
+-
+- Links:
+  - Stylised Personal Site
+    - https://www.seanhalpin.design/
+  - Favicons:
+    - https://www.favicon.cc/
+  - HTML Divs
+    - https://colorhunt.co/palette/14832
+  - Box Model of Website Styling
+    - https://markusvogl.com/web1/interactive_box_model/css_box_demo.html
+  - CSS Display Property
+    - https://stackoverflow.com/questions/2402761/is-img-element-block-level-or-inline-level
+  - Dark Art of Centering Elements with CSS
+    - https://developer.mozilla.org/en-US/docs/Web/CSS/margin
+  - Font Styling in Our Personal
+    - https://fonts.google.com/
+    - https://www.w3schools.com/cssref/css_websafe_fonts.asp
+  - Adding Content to our Website
+    - https://giphy.com/
+    - https://www.flaticon.com/
+    - https://loremipsum.io/
+  - CSS Font Property Challenge:
+    - https://developer.mozilla.org/en-US/docs/Web/CSS/color
+    - https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight
